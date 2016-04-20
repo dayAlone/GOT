@@ -69,8 +69,10 @@ export default {
                         value: 'Дешёвые авиабилеты в Королевскую гавань круглый год'
                     },
                     shareImages: {
-                        vk: '/layout/images/shares/GOT_social_1074x480_Royal_Harbor.jpg',
-                        fb: '/layout/images/shares/GOT_social_1200х630_Royal_Harbor.jpg'
+                        value: {
+                            vk: '/layout/images/shares/GOT_social_1074x480_Royal_Harbor.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200х630_Royal_Harbor.jpg'
+                        }
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
@@ -105,8 +107,10 @@ export default {
                         value: 'Дешёвые авиабилеты в Дорн круглый год'
                     },
                     shareImages: {
-                        vk: '/layout/images/shares/GOT_social_1074x480_Dorne.jpg',
-                        fb: '/layout/images/shares/GOT_social_1200х630_Dorne.jpg'
+                        value: {
+                            vk: '/layout/images/shares/GOT_social_1074x480_Dorne.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200х630_Dorne.jpg'
+                        }
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
@@ -141,8 +145,10 @@ export default {
                         value: 'Дешёвые авиабилеты в Миэрин круглый год'
                     },
                     shareImages: {
-                        vk: '/layout/images/shares/GOT_social_1074x480_Meereen.jpg',
-                        fb: '/layout/images/shares/GOT_social_1200х630_Meereen.jpg'
+                        value: {
+                            vk: '/layout/images/shares/GOT_social_1074x480_Meereen.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200х630_Meereen.jpg'
+                        }
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
@@ -177,8 +183,10 @@ export default {
                         value: 'Дешёвые авиабилеты в Земли одичалых круглый год'
                     },
                     shareImages: {
-                        vk: '/layout/images/shares/GOT_social_1074x480_Wild_Earth.jpg',
-                        fb: '/layout/images/shares/GOT_social_1200х630_Wild_Earth.jpg'
+                        value: {
+                            vk: '/layout/images/shares/GOT_social_1074x480_Wild_Earth.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200х630_Wild_Earth.jpg'
+                        }
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
@@ -213,8 +221,10 @@ export default {
                         value: 'Дешёвые авиабилеты в Пустыню Датракийцев круглый год'
                     },
                     shareImages: {
-                        vk: '/layout/images/shares/GOT_social_1074x480_Desert_Dothraki.jpg',
-                        fb: '/layout/images/shares/GOT_social_1200х630_Desert_Dothraki.jpg'
+                        value: {
+                            vk: '/layout/images/shares/GOT_social_1074x480_Desert_Dothraki.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200х630_Desert_Dothraki.jpg'
+                        }
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
