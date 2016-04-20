@@ -15,10 +15,9 @@ html
     include includes/apps
     include includes/favicons
     
-    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic', rel='stylesheet', type='text/css')
-    link(rel='stylesheet', href='/layout/css/style.css')
+    
 
-  body(data-country='#{country}')
+  body(data-country='#{country}', style='opacity: 0; transition: .3s opacity')
       include includes/counters
       .hidden
           include ../../public/images/svg/sprite.svg
@@ -109,8 +108,6 @@ html
                             a(href='#{link}', target='_blank', class='#{c}')
                                 svg(class='share__icon')
                                     use('xlink:href'='##{el}')
+    link(rel='stylesheet', href='/layout/css/style.css')
     
-    script(type="application/javascript", src="#{app}", async, defer)
-    
-    
-    
+script(type="application/javascript", src="#{app}", async, defer)
