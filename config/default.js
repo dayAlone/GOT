@@ -87,7 +87,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '4 серии нового сезона'
+                        value: '4&nbsp;серии нового сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -125,7 +125,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '8 серии нового сезона'
+                        value: '8&nbsp;серии нового сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -163,7 +163,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '5 серии нового сезона'
+                        value: '5&nbsp;серии нового сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -201,7 +201,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '17 серии нового сезона'
+                        value: '17&nbsp;серии нового сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -239,7 +239,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '18 серии нового сезона'
+                        value: '18&nbsp;серии нового сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
