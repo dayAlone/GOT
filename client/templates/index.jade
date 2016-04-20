@@ -73,7 +73,7 @@ html
                                             .slider__item(style='background-image: url(#{photo})')
                                 .country__tikets
                                     script(src='#{src}', async)
-                                .country__shares
+                                .country__shares.social-likes
                                     - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki']
                                         - var c = 'share share--' + el
                                         - var link = url + '/?country=' + key + '&' + social[el].utm
