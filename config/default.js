@@ -36,7 +36,7 @@ export default {
         },
         mainDescription: {
             description: 'Основное описание',
-            value: 'Главный приз конкурса <a data-event="Logo" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got">Aviasales</a> и&nbsp;Amediateka – путешествие<br/> на&nbsp;двоих по&nbsp;местам съёмок Игры престолов!'
+            value: 'Главный приз конкурса <a data-event="Logo" rel="nofollow" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got">Aviasales</a> и&nbsp;Amediateka – путешествие<br/> на&nbsp;двоих по&nbsp;местам съёмок Игры престолов!'
         },
         icons: {
             description: 'Иконки',
@@ -47,7 +47,7 @@ export default {
         },
         externalTitle: {
             description: 'Заголовок блока перед внешней ссылкой',
-            value: '​Борись за главный приз от официального перевозчика Вестероса <a data-event="Logo" target="_blank" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got"><span class="cern cern--a">A</span>viasale<span class="cern cern--s">s</span>.ru</a>'
+            value: '​Борись за главный приз от официального перевозчика Вестероса <a data-event="Logo" target="_blank" rel="nofollow" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got"><span class="cern cern--a">A</span>viasale<span class="cern cern--s">s</span>.ru</a>'
         },
         externalLink: {
             description: 'Внешняя ссылка',
