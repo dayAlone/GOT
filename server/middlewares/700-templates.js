@@ -39,12 +39,13 @@ export default function* (next) {
         }
 
         localsFull.country = false
-
+        localsFull.fbUrl = localsFull.url
         if (this.query.country && localsFull.countries[this.query.country]) {
             localsFull.country = this.query.country
             localsFull.title = localsFull.countries[this.query.country].shareTitle
             localsFull.description = localsFull.countries[this.query.country].shareDescription
             localsFull.shareImages = localsFull.countries[this.query.country].shareImages
+            localsFull.fbUrl = localsFull.url + '?country=' + this.query.country
         }
 
 
