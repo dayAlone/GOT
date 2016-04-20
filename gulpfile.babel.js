@@ -70,12 +70,11 @@ gulp.task('css:create', () => (
         .pipe(browserSync.stream())
 ))
 
-gulp.task('scripts', () => {
-    let configWebpack = require('../webpack/production.js')
-    return gulp.src([`${source}/js/**/*.js`])
-    .pipe(webpack(configWebpack))
-    .pipe(gulp.dest(`${dist}/js/`))
-})
+gulp.task('scripts', () => (
+    gulp.src([`${source}/js/**/*.js`])
+        .pipe(webpack(require('./webpack/production.js')))
+        .pipe(gulp.dest(`${dist}/js/`))
+))
 
 gulp.task('nodemon', () => (
     nodemon({

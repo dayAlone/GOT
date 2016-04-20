@@ -6,6 +6,7 @@ import CompressionPlugin from 'compression-webpack-plugin'
 import autoprefixer from 'autoprefixer'
 import mqpacker from 'css-mqpacker'
 import cssnano from 'cssnano'
+import base64 from 'postcss-inline-base64'
 
 export default {
     entry: {
@@ -40,7 +41,9 @@ export default {
         return [
             autoprefixer(({ browsers: 'last 2 version' })),
             mqpacker({ sort: true }),
-            cssnano({ reduceIdents: false })]
+            cssnano({ reduceIdents: false }),
+            base64({ baseDir: `${config.dist}/css/`})
+        ]
     },
     plugins: [
         new webpack.ProvidePlugin({
