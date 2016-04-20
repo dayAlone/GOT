@@ -1,0 +1,28 @@
+.scroller
+    *
+        fill #b1b2b2
+    &__wheel
+        animation mouse-wheel 1.2s ease infinite
+    &__arrow
+        animation mouse-scroll 1.2s infinite
+        animation-direction: alternate
+        &--first
+            animation-delay .1s
+        &--second
+            animation-delay .3s
+
+@keyframes mouse-wheel
+    0%
+        opacity: 1
+        transform: translateY(0)
+    100%
+        opacity: 0
+        transform: translateY(6px)
+
+@keyframes mouse-scroll
+    0%
+        opacity: 0
+    50%
+        opacity: .5
+    100%
+        opacity: 1

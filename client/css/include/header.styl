@@ -1,0 +1,53 @@
+.header
+    width 100%
+    text-align center
+
+    position relative
+    z-index: 100
+    &__shares
+        position absolute
+        top 10px
+        right 0
+        display flex
+        align-content: center
+        justify-content: flex-end;
+        span
+            margin-right 10px
+            font-size 14px
+            align-self: center;
+    &__logo
+        position relative
+        display inline-block
+        &:after
+            content ""
+            position absolute
+            margin-top 40px
+            top 50%
+            left 50%
+            z-index 20
+            size 120% 100%
+            background url(/layout/images/logo.png) center center no-repeat
+            transform: translateX(-50%) translateY(-50%);
+            background-size cover
+        img
+            max-width: 160px
+            position relative
+            z-index: 50;
+    &__title
+        font-size 44px
+        line-height 1.6
+        margin: -25px 0 40px
+    &__description
+        text-align center
+        font-size 34px
+        line-height 1.2
+        color #bbbbbb
+        margin-bottom 53px
+        a
+            color #1bb0da
+            text-decoration none
+            border-line(#1bb)
+        br
+            display none
+            @media (min-width: scr_lg)
+                display block

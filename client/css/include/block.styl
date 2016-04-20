@@ -1,0 +1,32 @@
+.block
+    @extend .page
+    overflow visible
+    width 100%
+    justify-content: center
+    padding 0 25px
+    @media (min-width: scr_md)
+        padding: 0
+    &--footer
+        margin-top 40px
+        bgImages('bg.footer', 'png')
+    &--header
+        background-position: bottom center
+        background-repeat no-repeat
+        bgImages('bg.header', 'png')
+        & ^[0]__content
+            @media (min-width: scr_md)
+                padding 30px 0 114px
+    &--icons
+        & ^[0]__content
+            max-width: 800px
+            padding-bottom 60px
+    &--external
+        & ^[0]__content
+            padding 90px 0px 30px
+            @media (min-width: scr_md)
+                padding 90px 0px 30px
+
+    &__content
+        max-width: 1366px
+        width 100%
+        position relative

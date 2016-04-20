@@ -1,0 +1,34 @@
+.share
+    margin 0 5px
+
+    &__icon
+        max-width: 28px
+        max-height: 23px
+        fill alpha(white, .7)
+        transition .3s fill
+    &--twitter
+        ^[0]__icon
+            max-width: 23px
+    &--vkontakte
+        &:hover ^[0]__icon
+            fill #526e8f
+    &--facebook
+        &:hover ^[0]__icon
+            fill #425497
+    &--instagram
+        &:hover ^[0]__icon
+            fill #00487a
+    &--twitter
+        &:hover ^[0]__icon
+            fill #01b7ec
+    &--odnoklassniki
+        &:hover ^[0]__icon
+            fill #f6903b
+    &--viber
+        &:hover ^[0]__icon
+            fill #7d539f
+    &:focus
+        outline 0
+.social-likes
+    &__icon
+        display none

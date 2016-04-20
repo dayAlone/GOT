@@ -1,0 +1,117 @@
+doctype html
+html
+  head
+    title= title
+    meta(name='description', content='#{description}')
+
+
+    meta(charset="utf-8")
+    meta(name="viewport",content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1")
+    meta(name="apple-mobile-web-app-capable", content="yes")
+    meta(name="mobile-web-app-capable", content="yes")
+    meta(name="apple-mobile-web-app-status-bar-style", content="black-translucent")
+        
+    include includes/social
+    include includes/apps
+    include includes/favicons
+    
+    link(href='https://fonts.googleapis.com/css?family=Roboto:400,300&subset=latin,cyrillic', rel='stylesheet', type='text/css')
+    if dev
+        link(rel='stylesheet', href='/layout/css/style.css')
+
+  body(data-country='#{country}')
+      include includes/counters
+      .hidden
+          include ../../public/images/svg/sprite.svg
+      .page
+            .header
+                .block.block--header
+                    .block__content
+                        .header__shares.social-likes
+                            span Поделиться:
+                            - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki']
+                                - var c = 'share share--' + el
+                                - var link = url + '/?' + social[el].utm
+                                - var event = social[el].short + '_first'
+                                
+                                a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-event='#{event}')
+                                    svg(class='share__icon')
+                                        use('xlink:href'='##{el}')
+                            
+                        a.header__logo(href='#{mainSiteUrl}', data-event='Logo', data-event-category='', target='_blank')
+                            img(src='/layout/images/svg/logo.svg')
+                        //.header__description!= mainDescription 
+                        //
+                .block.block--icons
+                    .block__content
+                        .header__title.title!= mainTitle
+                        .icons
+                            each val, key in icons
+                                - var id = key + 1
+                                .icons__item.icon
+                                    img.icon__image(src='/layout/images/icon.#{id}.png')
+                                    .icon__text!= val
+                        a.header__mouse(href='#', data-event='Scroll_click', data-event-category='Scrolling')
+                            include ../images/svg/mouse.svg
+            
+            .block.block--countries
+                .block__content
+                    .title!=countriesTitle
+                    each val, key in countries
+                        .country
+                            - var title = (key + 1) + '. ' + val.name
+                            - var src = '//www.travelpayouts.com/calendar_widget/iframe.js?marker=49246.thegot&origin=MOW&destination=' + val.airport + '&currency=rub&width=765&searchUrl=hydra.aviasales.ru&one_way=false&only_direct=false&locale=ru&period=year&range=7%2C14'
+                            .country__title!=title
+                            .country__place
+                                span Место съемок: 
+                                strong!=val.place
+                            .country__time
+                                span Время в полёте из Москвы: 
+                                strong!=val.time
+                            .country__frame
+                                .country__photos
+                                    .slider
+                                        - each photo in val.images
+                                            .slider__item(style='background-image: url(#{photo})')
+                                .country__tikets
+                                    script(src='#{src}', async)
+                                .country__shares
+                                    - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki']
+                                        - var c = 'share share--' + el
+                                        - var link = url + '/?country=' + key + '&' + social[el].utm
+                                        - var event = '[\"' + social[el].short + '_trip\",\"' + social[el].short + '_trip_'+ key +'\"]'
+                                        a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-event='#{event}')
+                                            svg(class='share__icon')
+                                                use('xlink:href'='##{el}')
+                            .country__descripton
+                                .country__spoiler
+                                    div
+                                        span Хочешь знать, Чем закончился 5 сезон?
+                                        br
+                                        a(href='#') Осторожно спойлер!
+                                div
+                                    span Чем закончился 5 сезон: 
+                                    strong!=val.description
+                            
+            .block.block--external
+                .block__content
+                    .title!=externalTitle
+                    a.button(href='#{externalLink}', target='_blank', data-event='Participate', data-event-category='')
+                        .button__text= externalLinkText
+            
+            .block.block--footer
+                .block__content.footer
+                    .footer__copyright © 2007–2016, Aviasales — дешевые авиабилеты
+                        
+                    .footer__links
+                        - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki', 'instagram', 'viber']
+                            - var c = 'share share--' + el
+                            - var link = social[el].link
+                            a(href='#{link}', target='_blank', class='#{c}')
+                                svg(class='share__icon')
+                                    use('xlink:href'='##{el}')
+    
+    script(type="application/javascript", src="#{app}", async, defer)
+    
+    
+    

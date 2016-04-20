@@ -1,0 +1,32 @@
+.icons
+    display: flex
+    text-align center
+    margin-bottom 0px
+    position relative
+    z-index: 50
+    justify-content: space-around;
+    flex-wrap: wrap;
+.icon
+    padding 0 0px 40px
+    @media (min-width: scr_md)
+        flex 1
+    position relative
+    &:after
+        position absolute
+        size 492px 513px
+        background: url(/layout/images/icon.glow.png)
+        background-size cover
+        pointer-events: none
+        content ""
+        top calc(50% - 80px)
+        left 50%
+        transform: translateX(-50%) translateY(-50%)
+        z-index: -1
+        opacity: .7
+    &__text
+        font-size 20px
+        font-weight 400
+        padding-top 16px
+        line-height 1.25
+    &__image
+        max-width: 132px
