@@ -59,7 +59,7 @@ gulp.task('images:jpg', () => (
 
 gulp.task('images:png', () => (
     gulp.src(`${source}/images/**/*.png`)
-        .pipe(tinypng('TYLShla2f8RyFY5i0s-LHfSxenjvIv-V'))
+        //.pipe(tinypng('TYLShla2f8RyFY5i0s-LHfSxenjvIv-V'))
         .pipe(gulp.dest(`${dist}/images/`))
 ))
 
