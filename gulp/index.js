@@ -97,7 +97,7 @@ gulp.task('server:start', () => (browserSync.init({ proxy: 'localhost:3000', por
 
 
 
-gulp.task('build', () => (runSequence('scripts', 'images', 'others', 'fonts', 'svg')))
+gulp.task('build', () => (runSequence('images', 'others', 'fonts', 'svg', 'scripts')))
 
 gulp.task('watch', () => {
 
