@@ -77,7 +77,7 @@ html
                                 .country__shares.social-likes
                                     - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki']
                                         - var c = 'share share--' + el
-                                        - var link = url + '/?country=' + key + '&' + social[el].utm
+                                        - var link = encodeURIComponent(url + '/?country=' + key + '&' + social[el].utm)
                                         - var event = '[\"' + social[el].short + '_trip\",\"' + social[el].short + '_trip_'+ key +'\"]'
                                         a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-event='#{event}', data-title='#{val.shareTitle}')
                                             svg(class='share__icon')
