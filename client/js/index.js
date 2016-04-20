@@ -32,6 +32,7 @@ $(window).on('scroll', throttle(checkScroll, 100))
 $('.slider').slick({
     fade: true,
     infinity: true,
+    autoplay: true,
     prevArrow: '<svg class="slick-prev"><use xlink:href="#arrow.left"/></svg>',
     nextArrow: '<svg class="slick-next"><use xlink:href="#arrow.right"/></svg>'
 })

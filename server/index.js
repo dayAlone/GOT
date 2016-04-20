@@ -13,7 +13,7 @@ router.get('/', ctx => {
 
 router.get('/robots.txt', ctx => {
     ctx.body = `User-agent: *
-    \n Disallow: /`
+Disallow: /`
 })
 
 app.use(router.routes())
