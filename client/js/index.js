@@ -5,11 +5,12 @@ import { throttle } from 'lodash'
 
 let isScrollTriggered = false
 
-let reachGoal = (event, category = '') => {
+let reachGoal = (event, category = '', r = '') => {
     let go = (ev) => {
         console.log(ev)
         window.yaCounter36899425.reachGoal(ev)
-        window.ga('send', 'event', category, ev)
+        window.ga('send', { hitType: 'event', eventCategory: category, eventAction: ev, params: r })
+        window.mamka('send_event', { name: ev, meta: category })
     }
     if (Array.isArray(event)) event.map(el => (go(el)))
     else go(event)
