@@ -33,7 +33,7 @@ html
                                 - var link = url + '/?' + social[el].utm
                                 - var event = social[el].short + '_first'
                                 
-                                a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-event='#{event}')
+                                a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-title='Выиграй путешествие по местам съемок «Игры престолов»!', data-event='#{event}')
                                     svg(class='share__icon')
                                         use('xlink:href'='##{el}')
                             
@@ -85,7 +85,7 @@ html
                             .country__descripton
                                 .country__spoiler
                                     div
-                                        span Хочешь знать, Чем закончился 5 сезон?
+                                        span Хочешь знать, Чем закончился 5&nbsp;сезон?
                                         br
                                         a(href='#') Осторожно спойлер!
                                 div

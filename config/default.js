@@ -36,14 +36,14 @@ export default {
         },
         mainDescription: {
             description: 'Основное описание',
-            value: 'Главный приз конкурса <a data-event="Logo" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got">Aviasales</a> и&nbsp;Amediateka – путешествие<br/>на&nbsp;двоих по&nbsp;местам съёмок Игры престолов!'
+            value: 'Главный приз конкурса <a data-event="Logo" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got">Aviasales</a> и&nbsp;Amediateka – путешествие<br/> на&nbsp;двоих по&nbsp;местам съёмок Игры престолов!'
         },
         icons: {
             description: 'Иконки',
             value: [
-                'Перелёт на двоих<br/>Москва — Дублин',
-                'Проживание в отеле&nbsp;3*<br/>7 ночей в Дублине',
-                'Тур по местам съёмок<br/>Игры престолов']
+                'Перелёт на двоих<br/> Москва — Дублин',
+                'Проживание в отеле&nbsp;3*<br/> 7 ночей в Дублине',
+                'Тур по местам съёмок<br/> Игры престолов']
         },
         externalTitle: {
             description: 'Заголовок блока перед внешней ссылкой',
@@ -59,7 +59,7 @@ export default {
         },
         countriesTitle: {
             description: 'Заголовок перед странами',
-            value: 'Ты можешь попасть и в другие места<br/>Съёмок Семи Королевств самостоятельно'
+            value: 'Ты можешь попасть и в другие места<br/> Съёмок Семи Королевств самостоятельно'
         },
         countries: {
             description: 'Список стран',

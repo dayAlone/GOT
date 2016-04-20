@@ -31,8 +31,8 @@ $(window).on('scroll', throttle(checkScroll, 100))
 $('.slider').slick({
     fade: true,
     infinity: true,
-    prevArrow: '<svg class="slick-prev"><use xlink:href="#arrow.prev"/></svg>',
-    nextArrow: '<svg class="slick-next"><use xlink:href="#arrow.next"/></svg>'
+    prevArrow: '<svg class="slick-prev"><use xlink:href="#arrow.left"/></svg>',
+    nextArrow: '<svg class="slick-next"><use xlink:href="#arrow.right"/></svg>'
 })
 
 $('.header__mouse').on('click', function (e) {

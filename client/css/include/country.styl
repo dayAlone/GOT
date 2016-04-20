@@ -5,15 +5,21 @@
         display flex
         min-height: 105px
         justify-content: center;
+        font-size 18px
+        padding 20px 3%
+        @media (min-width: scr_md)
+            padding 20px 9%
+            font-size 24px
         > div
             align-self: center
     &__descripton
         background-color alpha(#3b4c4c, .3)
         margin-top 20px
-        font-size 24px
+
         text-align center
-        padding 20px 9%
+
         position relative
+
         span
             color alpha(white, .5)
     &__shares
@@ -28,7 +34,7 @@
             display: inline-block;
     &__frame
         display flex
-        margin-top 50px
+        margin-top 60px
         justify-content: space-around
         flex-direction: column
         position relative
@@ -45,7 +51,6 @@
         top 0
         left 0
         padding 20px 0
-        font-size 24px
         cursor pointer
         transition: .3s opacity
         &--hidden
@@ -63,11 +68,21 @@
         background-color white
         flex: 4
         padding: 10px 0px 10px 10px
+        > div
+            position relative
+            @media (max-width: 362px)
+                left calc(50% - 5px)
+                transform: translateX(-50%);
     &__place
     &__time
         text-align: center;
-        font-size 24px
+
         line-height 1.4
+        font-size 19px
+        @media (min-width: scr_sm)
+            font-size 20px
+        @media (min-width: scr_md)
+            font-size 24px
         span
             color alpha(white, .5)
         strong

@@ -1,10 +1,18 @@
 .slider
-    max-height: 413px
     overflow: hidden
     &__item
-        min-height: 413px !important
+
         background-size cover
+        background-position center
         width 100%
+    &, &__item
+        min-height: 250px
+        @media (min-width: scr_sm)
+            min-height: 420px
+        @media (min-width: 845px)
+            min-height: 483px
+        @media (min-width: 1240px)
+            min-height: 413px
     .slick-arrow
         position absolute
         top 50%

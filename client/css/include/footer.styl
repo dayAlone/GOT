@@ -6,7 +6,16 @@
     display flex
     justify-content: space-around
     align-content: center
+    flex-wrap: wrap
+    text-align center
+    @media (min-width: scr_sm)
+        flex-wrap: nowrap;
+        text-align: left;
     &__copyright
-        font-size 20px
+        font-size 14px
+        margin-bottom 10px
+        @media (min-width: scr_sm)
+            margin-bottom 0
+            font-size 20px
     *
         align-self: center;

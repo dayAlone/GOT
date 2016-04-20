@@ -7,10 +7,16 @@
     justify-content: space-around;
     flex-wrap: wrap;
 .icon
-    padding 0 0px 40px
-    @media (min-width: scr_md)
-        flex 1
+    padding 0 0px 60px
+
     position relative
+    width 100%
+    @media (min-width: scr_xs)
+        width (100/2)%
+        padding 0 0px 40px
+    @media (min-width: scr_sm)
+        flex-grow: 1
+        width (100/3)%
     &:after
         position absolute
         size 492px 513px
@@ -24,9 +30,14 @@
         z-index: -1
         opacity: .7
     &__text
-        font-size 20px
+
         font-weight 400
         padding-top 16px
         line-height 1.25
+        font-size 15px
+        @media (min-width: scr_sm)
+            font-size 18px
+        @media (min-width: scr_md)
+            font-size 20px
     &__image
         max-width: 132px

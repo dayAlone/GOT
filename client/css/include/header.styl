@@ -8,9 +8,12 @@
         position absolute
         top 10px
         right 0
+        width 100%
         display flex
         align-content: center
-        justify-content: flex-end;
+        justify-content: center
+        @media (min-width: scr_sm)
+            justify-content: flex-end;
         span
             margin-right 10px
             font-size 14px
@@ -34,9 +37,14 @@
             position relative
             z-index: 50;
     &__title
-        font-size 44px
+
         line-height 1.6
         margin: -25px 0 40px
+        font-size 24px
+        @media (min-width: scr_sm)
+            font-size 36px
+        @media (min-width: scr_lg)
+            font-size 44px
     &__description
         text-align center
         font-size 34px
