@@ -22,7 +22,8 @@ export default {
         shareImages: {
             description: 'Картинки для шеринга',
             value: {
-                default: ''
+                vk: '/layout/images/shares/GOT_social_1200х630_Westeros.jpg',
+                fb: '/layout/images/shares/GOT_social_1200х630_Westeros.jpg',
             }
         },
         mainSiteUrl: {
@@ -67,6 +68,10 @@ export default {
                     shareTitle: {
                         value: 'Дешёвые авиабилеты в Королевскую гавань круглый год'
                     },
+                    shareImages: {
+                        vk: '/layout/images/shares/GOT_social_1074x480_Royal_Harbor.jpg',
+                        fb: '/layout/images/shares/GOT_social_1200х630_Royal_Harbor.jpg'
+                    },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
                     },
@@ -98,6 +103,10 @@ export default {
                 {
                     shareTitle: {
                         value: 'Дешёвые авиабилеты в Дорн круглый год'
+                    },
+                    shareImages: {
+                        vk: '/layout/images/shares/GOT_social_1074x480_Dorne.jpg',
+                        fb: '/layout/images/shares/GOT_social_1200х630_Dorne.jpg'
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
@@ -131,6 +140,10 @@ export default {
                     shareTitle: {
                         value: 'Дешёвые авиабилеты в Миэрин круглый год'
                     },
+                    shareImages: {
+                        vk: '/layout/images/shares/GOT_social_1074x480_Meereen.jpg',
+                        fb: '/layout/images/shares/GOT_social_1200х630_Meereen.jpg'
+                    },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
                     },
@@ -152,7 +165,7 @@ export default {
                     },
                     images: {
                         description: 'Изображения',
-                        value: ['/layout/images/photos/seville.1.jpg', '/layout/images/photos/seville.2.jpg', '/layout/images/photos/seville.3.jpg']
+                        value: ['/layout/images/photos/split.1.jpg', '/layout/images/photos/split.2.jpg', '/layout/images/photos/split.3.jpg']
                     },
                     airport: {
                         description: 'Код аэропорта',
@@ -162,6 +175,10 @@ export default {
                 {
                     shareTitle: {
                         value: 'Дешёвые авиабилеты в Земли одичалых круглый год'
+                    },
+                    shareImages: {
+                        vk: '/layout/images/shares/GOT_social_1074x480_Wild_Earth.jpg',
+                        fb: '/layout/images/shares/GOT_social_1200х630_Wild_Earth.jpg'
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
@@ -194,6 +211,10 @@ export default {
                 {
                     shareTitle: {
                         value: 'Дешёвые авиабилеты в Пустыню Датракийцев круглый год'
+                    },
+                    shareImages: {
+                        vk: '/layout/images/shares/GOT_social_1074x480_Desert_Dothraki.jpg',
+                        fb: '/layout/images/shares/GOT_social_1200х630_Desert_Dothraki.jpg'
                     },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
