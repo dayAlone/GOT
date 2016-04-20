@@ -22,8 +22,8 @@ export default {
         shareImages: {
             description: 'Картинки для шеринга',
             value: {
-                vk: '/layout/images/shares/GOT_social_1200х630_Westeros.jpg',
-                fb: '/layout/images/shares/GOT_social_1200х630_Westeros.jpg',
+                vk: '/layout/images/shares/GOT_social_1200x630_Westeros.jpg',
+                fb: '/layout/images/shares/GOT_social_1200x630_Westeros.jpg',
             }
         },
         mainSiteUrl: {
@@ -71,7 +71,7 @@ export default {
                     shareImages: {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Royal_Harbor.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200х630_Royal_Harbor.jpg'
+                            fb: '/layout/images/shares/GOT_social_1200x630_Royal_Harbor.jpg'
                         }
                     },
                     shareDescription: {
@@ -109,7 +109,7 @@ export default {
                     shareImages: {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Dorne.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200х630_Dorne.jpg'
+                            fb: '/layout/images/shares/GOT_social_1200x630_Dorne.jpg'
                         }
                     },
                     shareDescription: {
@@ -147,7 +147,7 @@ export default {
                     shareImages: {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Meereen.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200х630_Meereen.jpg'
+                            fb: '/layout/images/shares/GOT_social_1200x630_Meereen.jpg'
                         }
                     },
                     shareDescription: {
@@ -185,7 +185,7 @@ export default {
                     shareImages: {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Wild_Earth.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200х630_Wild_Earth.jpg'
+                            fb: '/layout/images/shares/GOT_social_1200x630_Wild_Earth.jpg'
                         }
                     },
                     shareDescription: {
@@ -223,7 +223,7 @@ export default {
                     shareImages: {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Desert_Dothraki.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200х630_Desert_Dothraki.jpg'
+                            fb: '/layout/images/shares/GOT_social_1200x630_Desert_Dothraki.jpg'
                         }
                     },
                     shareDescription: {
