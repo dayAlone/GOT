@@ -51,9 +51,15 @@ if (country) {
     $('html, body').stop().animate({ scrollTop: $(`.country:nth-child(${country + 1})`).offset().top }, '500', 'swing')
 }
 
+$('a.share').on('click', e => {
+    e.preventDefault()
+})
+
 $('[data-event]').on('click', e => {
     let el = $(e.currentTarget)
     reachGoal(el.data('event'), el.data('event-category'))
 })
+
+
 
 if (module.hot) module.hot.accept()
