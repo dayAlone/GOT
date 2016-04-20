@@ -1,4 +1,3 @@
-import '../../public/css/style.css'
 import 'social-likes-next'
 import 'slick-carousel'
 import 'slick-carousel/slick/slick.css'

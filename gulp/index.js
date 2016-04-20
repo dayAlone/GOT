@@ -9,6 +9,7 @@ import nib from 'nib'
 //PostCSS
 import mqpacker from 'css-mqpacker'
 import base64 from 'postcss-inline-base64'
+import cssnano from 'cssnano'
 
 let browserSync = require('browser-sync').create()
 let { folders: { source: source, dist: dist } } = config
@@ -68,7 +69,13 @@ gulp.task('css:create', () => (
         .pipe(stylus({ use: nib() }))
         .pipe(postcss([base64({ baseDir: `${dist}/css/` }), mqpacker({ sort: true })]))
         .pipe(gulp.dest(`${dist}/css/`))
-        .pipe(browserSync.stream())
+))
+
+gulp.task('css:min', () => (
+    gulp.src(`${dist}/css/**/*.css`)
+        .pipe(plumber({ errorHandler: notify.onError("Error: <%= error.message %>") }))
+        .pipe(postcss([cssnano()]))
+        .pipe(gulp.dest(`${dist}/css/`))
 ))
 
 gulp.task('scripts', () => (
@@ -86,7 +93,7 @@ gulp.task('nodemon', () => (
 
 
 gulp.task('svg', () => (runSequence('svg:optimize', 'svg:sprite')))
-gulp.task('css', () => (runSequence('css:create')))
+gulp.task('css', () => (runSequence('css:create', 'css:min')))
 gulp.task('images', () => (runSequence('images:jpg', 'images:png')))
 
 gulp.task('fonts', () => (gulp.src(fontsSource).pipe(gulp.dest(`${dist}/fonts/`))))
