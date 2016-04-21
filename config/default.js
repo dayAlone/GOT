@@ -26,6 +26,11 @@ export default {
                 fb: '/layout/images/shares/GOT_social_1200x630_Westeros.jpg',
             }
         },
+        shareLinks: {
+            value: {
+                tw: 'http://avs.io/bK1'
+            }
+        },
         mainSiteUrl: {
             description: 'Ссылка на сайт Aviasales',
             value: 'https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got'
@@ -47,7 +52,7 @@ export default {
         },
         externalTitle: {
             description: 'Заголовок блока перед внешней ссылкой',
-            value: '​Борись за главный приз от официального перевозчика Вестероса <a data-event="Logo" target="_blank" rel="nofollow" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got"><span class="cern cern--a">A</span>viasale<span class="cern cern--s">s</span>.ru</a>'
+            value: '​Борись за главный приз от официального перевозчика Вестероса <a data-event="Logo" target="_blank" rel="nofollow" href="https://aviasales.ru/?utm_source=landing&utm_medium=aviasales&utm_campaign=got"><span class="cern cern--a">A</span>viasale<span class="cern cern--s">s</span><span class="cern cern--dot">.</span>ru</a>'
         },
         externalLink: {
             description: 'Внешняя ссылка',
@@ -72,6 +77,11 @@ export default {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Royal_Harbor.jpg',
                             fb: '/layout/images/shares/GOT_social_1200x630_Royal_Harbor.jpg'
+                        }
+                    },
+                    shareLinks: {
+                        value: {
+                            tw: 'http://avs.io/bK3'
                         }
                     },
                     shareDescription: {
@@ -112,6 +122,11 @@ export default {
                             fb: '/layout/images/shares/GOT_social_1200x630_Dorne.jpg'
                         }
                     },
+                    shareLinks: {
+                        value: {
+                            tw: 'http://avs.io/bK5'
+                        }
+                    },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
                     },
@@ -148,6 +163,11 @@ export default {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Meereen.jpg',
                             fb: '/layout/images/shares/GOT_social_1200x630_Meereen.jpg'
+                        }
+                    },
+                    shareLinks: {
+                        value: {
+                            tw: 'http://avs.io/bK6'
                         }
                     },
                     shareDescription: {
@@ -188,6 +208,11 @@ export default {
                             fb: '/layout/images/shares/GOT_social_1200x630_Wild_Earth.jpg'
                         }
                     },
+                    shareLinks: {
+                        value: {
+                            tw: 'http://avs.io/bK7'
+                        }
+                    },
                     shareDescription: {
                         value: 'Лети в Семь Королевств!'
                     },
@@ -224,6 +249,11 @@ export default {
                         value: {
                             vk: '/layout/images/shares/GOT_social_1074x480_Desert_Dothraki.jpg',
                             fb: '/layout/images/shares/GOT_social_1200x630_Desert_Dothraki.jpg'
+                        }
+                    },
+                    shareLinks: {
+                        value: {
+                            tw: 'http://avs.io/bK8'
                         }
                     },
                     shareDescription: {

@@ -31,7 +31,7 @@ html
                             span Поделиться:
                             - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki']
                                 - var c = 'share share--' + el
-                                - var link = url + '/?' + social[el].utm
+                                - var link = shareLinks[social[el].short] && shareLinks[social[el].short].length > 0 ? shareLinks[social[el].short] : url + '/?' + social[el].utm
                                 - var event = social[el].short + '_first'
                                 
                                 a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-title='Выиграй путешествие по местам съемок «Игры престолов»!', data-event='#{event}')
@@ -78,7 +78,7 @@ html
                                 .country__shares.social-likes
                                     - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki']
                                         - var c = 'share share--' + el
-                                        - var link = url + '/?country=' + key + '&' + social[el].utm
+                                        - var link = shareLinks[social[el].short] && shareLinks[social[el].short].length > 0 ? shareLinks[social[el].short] : url + '/?country=' + key + '&' + social[el].utm
                                         - var event = '[\"' + social[el].short + '_trip\",\"' + social[el].short + '_trip_'+ key +'\"]'
                                         a(href='#', data-service='#{el}', class='#{c}', data-url='#{link}', data-event-category='Share', data-event='#{event}', data-title='#{val.shareTitle}')
                                             svg(class='share__icon')
