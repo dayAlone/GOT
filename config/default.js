@@ -270,7 +270,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '17&nbsp;серий нового&nbsp;сезона'
+                        value: '17&nbsp;серий'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -314,7 +314,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '18&nbsp;серий нового&nbsp;сезона'
+                        value: '18&nbsp;серий'
                     },
                     description: {
                         description: 'Описание/спойлер',
