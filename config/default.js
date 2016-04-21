@@ -62,7 +62,7 @@ export default {
                 },
                 {
                     text: {
-                        value: 'Проживание в отеле&nbsp;3*<br/> 7 ночей в Дублине',
+                        value: 'Проживание в отеле&nbsp;3*<br/> 7 ночей в&nbsp;Дублине',
                     },
                     event: {
                         value: 'button_hl',
@@ -103,7 +103,7 @@ export default {
         },
         countriesTitle: {
             description: 'Заголовок перед странами',
-            value: 'Ты можешь попасть и в другие места<br/> Съёмок Семи Королевств самостоятельно'
+            value: 'Ты можешь попасть и&nbsp;в&nbsp;другие места<br/> Съёмок Семи Королевств самостоятельно'
         },
         countries: {
             description: 'Список стран',
@@ -179,7 +179,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '8&nbsp;серии нового&nbsp;сезона'
+                        value: '8&nbsp;серий нового&nbsp;сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -222,7 +222,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '5&nbsp;серии нового&nbsp;сезона'
+                        value: '5&nbsp;серий нового&nbsp;сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -265,7 +265,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '17&nbsp;серии нового&nbsp;сезона'
+                        value: '17&nbsp;серий нового&nbsp;сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
@@ -308,7 +308,7 @@ export default {
                     },
                     time: {
                         description: 'Время из Москвы',
-                        value: '18&nbsp;серии нового&nbsp;сезона'
+                        value: '18&nbsp;серий нового&nbsp;сезона'
                     },
                     description: {
                         description: 'Описание/спойлер',
