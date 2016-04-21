@@ -8,9 +8,9 @@ let isScrollTriggered = false
 let reachGoal = (event, category = '', r = '') => {
     let go = (ev) => {
         console.log(ev)
-        window.yaCounter36899425.reachGoal(ev)
-        window.ga('send', { hitType: 'event', eventCategory: category, eventAction: ev, params: r })
-        window.mamka('send_event', { name: ev, meta: category })
+        if (window.yaCounter36899425) window.yaCounter36899425.reachGoal(ev)
+        if (window.ga) window.ga('send', { hitType: 'event', eventCategory: category, eventAction: ev, params: r })
+        if (window.mamka) window.mamka('send_event', { name: ev, meta: category })
     }
     if (Array.isArray(event)) event.map(el => (go(el)))
     else go(event)
@@ -54,7 +54,7 @@ if (country) {
 }
 
 $('a.share').on('click', e => {
-    e.preventDefault()
+    if ($(e.currentTarget).parents('.footer').length === 0) e.preventDefault()
 })
 
 $('[data-event]').on('click', e => {

@@ -271,6 +271,7 @@ export default {
 
                 },
                 instagram: {
+                    short: 'inst',
                     link: 'https://instagram.com/aviasales',
                 },
                 twitter: {
@@ -286,6 +287,7 @@ export default {
 
                 },
                 viber: {
+                    short: 'vbr',
                     link: 'https://chats.viber.com/aviasales',
                 }
             }

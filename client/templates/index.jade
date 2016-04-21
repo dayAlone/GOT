@@ -107,7 +107,8 @@ html
                         - each el in ['vkontakte', 'facebook', 'twitter', 'odnoklassniki', 'instagram', 'viber']
                             - var c = 'share share--' + el
                             - var link = social[el].link
-                            a(href='#{link}', target='_blank', class='#{c}')
+                            - var event = social[el].short + '_group'
+                            a(href='#{link}', target='_blank', class='#{c}', data-event-category='SocialGroup', data-event='#{event}',)
                                 svg(class='share__icon')
                                     use('xlink:href'='##{el}')
     link(rel='stylesheet', href='/layout/css/style.css')
