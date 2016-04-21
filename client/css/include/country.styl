@@ -62,7 +62,8 @@
         justify-content: space-around
         flex-direction: column
         position relative
-
+        @media (min-width: scr_xs)
+            margin-top 40px
         @media (min-width: scr_sm)
             flex-direction: row
     &__photos
@@ -109,5 +110,6 @@
         font-size 24px
         color #c99f8a
         font-family: $heading-font
-        margin-bottom 30px
+        margin-bottom 20px
         line-height 1.7
+        word-spacing: .4em
