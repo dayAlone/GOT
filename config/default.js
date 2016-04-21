@@ -46,9 +46,48 @@ export default {
         icons: {
             description: 'Иконки',
             value: [
-                'Перелёт на двоих<br/> Москва — Дублин',
-                'Проживание в отеле&nbsp;3*<br/> 7 ночей в Дублине',
-                'Тур по местам съёмок<br/> Игры престолов']
+                {
+                    text: {
+                        value: 'Перелёт на двоих<br/> Москва — Дублин',
+                    },
+                    event: {
+                        value: 'button_as',
+                    },
+                    group: {
+                        value: 'Buttons',
+                    },
+                    link: {
+                        value: 'https://www.aviasales.ru/routes/mow/dub?utm_source=landing&utm_medium=aviasales&utm_campaign=got'
+                    },
+                },
+                {
+                    text: {
+                        value: 'Проживание в отеле&nbsp;3*<br/> 7 ночей в Дублине',
+                    },
+                    event: {
+                        value: 'button_hl',
+                    },
+                    group: {
+                        value: 'Buttons',
+                    },
+                    link: {
+                        value: 'https://hotellook.ru/cities/dublin?utm_source=landing&utm_medium=aviasales&utm_campaign=got&marker=vm.got'
+                    },
+                },
+                {
+                    text: {
+                        value: 'Тур по местам съёмок<br/> Игры престолов',
+                    },
+                    event: {
+                        value: 'Scrolling_down',
+                    },
+                    group: {
+                        value: 'Scrolling',
+                    },
+                    link: {
+                        value: '#'
+                    },
+                }]
         },
         externalTitle: {
             description: 'Заголовок блока перед внешней ссылкой',

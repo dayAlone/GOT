@@ -37,7 +37,8 @@ $('.slider').slick({
     nextArrow: '<svg class="slick-next"><use xlink:href="#arrow.right"/></svg>'
 })
 
-$('.header__mouse').on('click', function (e) {
+
+$('.header__mouse, .icon:nth-child(3)').on('click', function (e) {
     $('html, body').stop().animate({ scrollTop: $('.block--countries').offset().top - 50 }, '500', 'swing')
     e.preventDefault()
 })

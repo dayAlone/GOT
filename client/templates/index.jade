@@ -48,9 +48,10 @@ html
                         .icons
                             each val, key in icons
                                 - var id = key + 1
-                                .icons__item.icon
+                                - var target = val.link.length > 1 ? '_blank' : '_top'
+                                a.icons__item.icon(href='#{val.link}', target='#{target}' data-event='#{val.event}', data-event-category='#{val.group}')
                                     img.icon__image(src='/layout/images/icon.#{id}.png')
-                                    .icon__text!= val
+                                    .icon__text!= val.text
                         a.header__mouse(href='#', data-event='Scroll_click', data-event-category='Scrolling')
                             include ../images/svg/mouse.svg
             
