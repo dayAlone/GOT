@@ -1,5 +1,7 @@
 .country
-    padding-top 80px
+    padding 40px 0
+    &:first-of-type
+        padding-bottom 80px
     &__spoiler
     &__descripton
         display flex
@@ -71,8 +73,15 @@
         background-color white
         flex: 4
         padding: 0px
+        min-height: 400px
         @media (min-width: scr_xs)
             padding: 10px 0px 10px 10px
+        @media (min-width: scr_sm)
+            min-height: 420px
+        @media (min-width: scr_md)
+            min-height: 483px
+        @media (min-width: scr_lg)
+            min-height: 410px
         > div
             position relative
             @media (max-width: 362px)
