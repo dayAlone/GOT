@@ -24,6 +24,7 @@ export default {
             value: {
                 vk: '/layout/images/shares/GOT_social_1200x630_Westeros.jpg',
                 fb: '/layout/images/shares/GOT_social_1200x630_Westeros.jpg',
+                tw: '/layout/images/shares/GOT_social_1024x512_Westeros.jpg',
             }
         },
         shareLinks: {
@@ -114,8 +115,9 @@ export default {
                     },
                     shareImages: {
                         value: {
-                            vk: '/layout/images/shares/GOT_social_1074x480_Royal_Harbor.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200x630_Royal_Harbor.jpg'
+                            vk: '/layout/images/shares/GOT_social_1200x534_Royal_Harbor.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200x630_Royal_Harbor.jpg',
+                            tw: '/layout/images/shares/GOT_social_1024x512_Royal_Harbor.jpg'
                         }
                     },
                     shareLinks: {
@@ -157,8 +159,9 @@ export default {
                     },
                     shareImages: {
                         value: {
-                            vk: '/layout/images/shares/GOT_social_1074x480_Dorne.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200x630_Dorne.jpg'
+                            vk: '/layout/images/shares/GOT_social_1200x534_Dorne.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200x630_Dorne.jpg',
+                            tw: '/layout/images/shares/GOT_social_1024x512_Dorne.jpg'
                         }
                     },
                     shareLinks: {
@@ -200,8 +203,9 @@ export default {
                     },
                     shareImages: {
                         value: {
-                            vk: '/layout/images/shares/GOT_social_1074x480_Meereen.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200x630_Meereen.jpg'
+                            vk: '/layout/images/shares/GOT_social_1200x534_Meereen.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200x630_Meereen.jpg',
+                            tw: '/layout/images/shares/GOT_social_1024x512_Meereen.jpg'
                         }
                     },
                     shareLinks: {
@@ -243,8 +247,9 @@ export default {
                     },
                     shareImages: {
                         value: {
-                            vk: '/layout/images/shares/GOT_social_1074x480_Wild_Earth.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200x630_Wild_Earth.jpg'
+                            vk: '/layout/images/shares/GOT_social_1200x534_Wild_Earth.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200x630_Wild_Earth.jpg',
+                            tw: '/layout/images/shares/GOT_social_1024x512_Wild_Earth.jpg'
                         }
                     },
                     shareLinks: {
@@ -286,8 +291,9 @@ export default {
                     },
                     shareImages: {
                         value: {
-                            vk: '/layout/images/shares/GOT_social_1074x480_Desert_Dothraki.jpg',
-                            fb: '/layout/images/shares/GOT_social_1200x630_Desert_Dothraki.jpg'
+                            vk: '/layout/images/shares/GOT_social_1200x534_Desert_Dothraki.jpg',
+                            fb: '/layout/images/shares/GOT_social_1200x630_Desert_Dothraki.jpg',
+                            tw: '/layout/images/shares/GOT_social_1024x512_Desert_Dothraki.jpg'
                         }
                     },
                     shareLinks: {
