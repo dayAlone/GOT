@@ -9,20 +9,37 @@
         padding 20px 5%
         @media (min-width: scr_xs)
             font-size 18px
-
         @media (min-width: scr_md)
             padding 20px 9%
             font-size 24px
         > div
             align-self: center
+    &__spoiler
+        position absolute
+        size 100%
+        background-color #101e24
+        top 0
+        left 0
+        cursor pointer
+        transition: .3s opacity
+        &--hidden
+            opacity: 0
+            pointer-events: none
+
+        span
+            text-transform uppercase
+        a
+            color #e9105f
+            text-transform none
+            text-decoration none
+            border-dashed(#e9105f, 100%, 5px)
+            @media (min-width: scr_xs)
+                border-dashed(#e9105f)
     &__descripton
         background-color alpha(#3b4c4c, .3)
         margin-top 20px
-
         text-align center
-
         position relative
-
         span
             color alpha(white, .5)
     &__shares
@@ -49,26 +66,7 @@
     &__photos
         flex: 3.5
         background-color black
-    &__spoiler
-        position absolute
-        size 100%
-        background-color #101e24
-        top 0
-        left 0
-        padding 20px 0
-        cursor pointer
-        transition: .3s opacity
-        &--hidden
-            opacity: 0
-            pointer-events: none
 
-        span
-            text-transform uppercase
-        a
-            color #e9105f
-            text-transform none
-            text-decoration none
-            border-dashed(#e9105f)
     &__tikets
         background-color white
         flex: 4

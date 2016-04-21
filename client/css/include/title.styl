@@ -18,7 +18,9 @@
     a
         color #1bb0da
         text-decoration none
-        border-line(#1bb)
+        border-line(#1bb, 100%)
+        @media (min-width: scr_xs)
+            border-line(#1bb)
     .cern
         &--a
             margin-right -.3em
