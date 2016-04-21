@@ -19,6 +19,18 @@
         flex-grow: 1
         width (100/3)%
     &:after
+        @media (min-width: scr_sm)
+            position absolute
+            left 100%
+            transform: translateX(-50%) translateY(-50%);
+            size 34px
+            background url(/layout/images/plus.png)
+            top 25%
+            background-size cover
+            content: ""
+    &:last-of-type:after
+        display none
+    &:before
         position absolute
         size 492px 513px
         background: url(/layout/images/icon.glow.png)
